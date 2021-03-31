@@ -63,7 +63,6 @@ a {
   left: 0;
   overflow: hidden;
   z-index: -100;
-  filter: blur(2px);
 }
 
 #bg-video {
