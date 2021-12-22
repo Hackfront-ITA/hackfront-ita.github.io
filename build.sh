@@ -1,6 +1,6 @@
 #!/bin/bash
-rm -r ./dist
 mkdir -p ./dist
+rm -r ./dist/*
 
 find ./src -name '*.css' | xargs uglifycss --output ./dist/style.css
 find ./src -name '*.js'  | xargs uglifyjs  --output ./dist/script.js -c -m --
