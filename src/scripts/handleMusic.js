@@ -1,5 +1,5 @@
 (function() {
-  var music = new Audio('/res/music/kFAO-RnANTY_edit.mp3');
+  var music = new Audio('/res/music/kr_ush3.mp3');
 
   music.addEventListener('ended', function() {
     this.currentTime = 0;
