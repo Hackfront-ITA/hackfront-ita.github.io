@@ -10,10 +10,10 @@
 
   var toggleMusic = function () {
     if (music.paused) {
-      playBtn.textContent = "pause";
+      playBtn.textContent = "PAUSE";
       music.play();
     } else {
-      playBtn.textContent = "play";
+      playBtn.textContent = "PLAY";
       music.pause();
     }
   };
