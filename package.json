@@ -1,0 +1,22 @@
+{
+  "name": "hackfront-website",
+  "version": "1.0.0",
+  "description": "Hackfront website",
+  "scripts": {
+    "build": "./build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.hackfront.eu/Hackfront/hackfront-website.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Hackfront <hackfront@protonmail.ch>",
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.19.3",
+    "uglifycss": "^0.0.29"
+  }
+}

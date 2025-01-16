@@ -2,8 +2,8 @@
 mkdir -p ./dist
 rm -r ./dist/*
 
-find ./src -name '*.css' | xargs uglifycss --output ./dist/style.css
-find ./src -name '*.js'  | xargs uglifyjs  --output ./dist/script.js -c -m --
+find ./src -name '*.css' | xargs npx uglifycss --output ./dist/style.css
+find ./src -name '*.js'  | xargs npx uglifyjs  --output ./dist/script.js -c -m --
 
 pushd ./src >/dev/null
 find . -type d -exec mkdir -p ../dist/{} \;
@@ -20,7 +20,7 @@ sed -i -e '/{%LP_STYLE%}/{
 }' ./dist/index.html
 rm ./dist/style.css ./dist/script.js
 
-html-minifier --output ./dist/index.html ./dist/index.html \
+npx html-minifier --output ./dist/index.html ./dist/index.html \
   --collapse-boolean-attributes \
   --collapse-inline-tag-whitespace \
   --collapse-whitespace \
