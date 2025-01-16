@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hackfront</title>
+<style>
+body{background-color:black;font-size:1.5em;font-family:'Ubuntu',Arial;font-weight:bold;color:white;overflow-x:hidden;width:100%;height:100%;margin:0;text-shadow:2px 2px 2px black}a{background:transparent;color:#f0a000;display:inline-block;text-decoration:none}.big-1{font-size:2.2em}.big-2{font-size:1.5em}.text-normal{font-weight:normal}.text-vaporwave{letter-spacing:.2em}#header{padding-top:2.4em;padding-bottom:2em}#links{padding-top:1.25em;padding-bottom:1.25em}#links>a{margin:.15em}#footer{padding-top:1.5em;padding-bottom:1.5em}#bg-container{position:fixed;top:0;right:0;bottom:0;left:0;overflow:hidden;z-index:-100;filter:blur(2px)}#bg-video{object-fit:cover;object-position:center center;width:100%;height:100%}#play-btn{float:right;margin-top:16px;margin-right:16px;-moz-user-select:none;-webkit-user-select:none;background-color:transparent;border-radius:.25rem;border:1px solid #6c757d;color:#6c757d;cursor:pointer;display:inline-block;font-family:;font-size:1rem;font-weight:400;line-height:1.5;padding:.375rem .75rem;text-align:center;text-decoration:none;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;user-select:none;vertical-align:middle}#play-btn:hover{background-color:#6c757d;border-color:#6c757d;color:#fff}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'),local('Ubuntu-Regular'),url(/res/fonts/4iCs6KVjbNBYlgoKcg72j00.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'),local('Ubuntu-Regular'),url(/res/fonts/4iCs6KVjbNBYlgoKew72j00.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'),local('Ubuntu-Regular'),url(/res/fonts/4iCs6KVjbNBYlgoKcw72j00.woff2) format('woff2');unicode-range:U+1F00-1FFF}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'),local('Ubuntu-Regular'),url(/res/fonts/4iCs6KVjbNBYlgoKfA72j00.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'),local('Ubuntu-Regular'),url(/res/fonts/4iCs6KVjbNBYlgoKcQ72j00.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'),local('Ubuntu-Regular'),url(/res/fonts/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<meta content="width=device-width,user-scalable=0,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+</head>
+<body>
+<!-- INFO - Song:  Miami Nights 1984 - Accelerated - https://youtu.be/rDBbaGCCIhk -->
+<!-- INFO - Video: VAPORWAVE - Infinite Background - https://youtu.be/Lup1qQXTebM -->
+<div id="bg-container">
+<video autoplay id="bg-video" loop muted playsinline="true">
+<source src="/res/video/Lup1qQXTebM.mp4" type="video/mp4">
+</video>
+</div>
+<div>
+<button id="play-btn">PLAY</button>
+<center>
+<div id="header">
+<span class="big-1 text-vaporwave">WELCOME</span><br/>
+</div>
+<div id="links">
+<a href="https://cdn.hackfront.eu/">CDN Archive</a><br/>
+<a href="https://cloud.hackfront.eu/">HF Cloud</a><br/>
+<a href="https://git.hackfront.eu/explore/repos">Git server</a><br/>
+<a href="https://apps.hackfront.eu/transmission/web/">Transmission</a><br/>
+</div>
+<div id="footer">
+<span class="big-2">Contact</span><br/>
+Email:<span class="text-normal"><a href="javascript:alert('No spam please!')" id="super-secret-content">nospam@plea.se</a></span><br/>
+Telegram:<span class="text-normal"><a href="https://telegram.me/Hackfront" target="_blank">@Hackfront</a></span><br/>
+</div>
+</center>
+</div>
+<script>
+!function(){var e=new Audio("/res/music/rDBbaGCCIhk.mp3"),t=(e.addEventListener("ended",function(){this.currentTime=0,this.play()},!1),document.querySelector("#play-btn"));t.addEventListener("click",function(){e.paused?(t.textContent="PAUSE",e.play()):(t.textContent="PLAY",e.pause())},!1)}(),function(){function e(e){return atob(e).split("").reverse().join("")}var t="aGMubGlhbW5vdG9ycEB0bm9yZmtjYWg=",n=document.querySelector("#super-secret-content");n.href=e("Om90bGlhbQ==")+e(t),n.textContent=e(t)}(),function(){function e(){t.play()}var t=document.querySelector("#bg-video");e(),document.addEventListener("click",e,!1),document.addEventListener("contextmenu",e,!1)}();
+</script>
+</body>
+</html>
